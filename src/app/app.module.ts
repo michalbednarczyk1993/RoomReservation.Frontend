@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultModule } from './layouts/default/default.module';
 import { FullpageModule } from './layouts/fullpage/fullpage.module';
+import { FullpageAdminModule } from './layouts/fullpage-admin/fullpage-admin.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FullpageModule } from './layouts/fullpage/fullpage.module';
     BrowserModule,
     AppRoutingModule,
     DefaultModule,
-    FullpageModule
+    FullpageModule,
+    FullpageAdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

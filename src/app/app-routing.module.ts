@@ -5,6 +5,8 @@ import { HomeComponent } from './modules/home/home.component';
 import { ProductComponent } from './modules/product/product.component';
 import { FullpageComponent } from './layouts/fullpage/fullpage.component';
 import { LoginComponent } from './modules/login/login.component';
+import { FullpageAdminComponent } from './layouts/fullpage-admin/fullpage-admin.component';
+import { AdminComponent } from './modules/admin/admin.component';
 
 const routes: Routes = [
   {
@@ -17,7 +19,12 @@ const routes: Routes = [
     path:'', component: FullpageComponent, children: [
       {path:'login', component: LoginComponent}
     ]
-  }
+  },
+  {
+    path:'', component: FullpageAdminComponent, children: [
+      {path:'admin', component: AdminComponent}
+    ]
+  },
 ];
 
 @NgModule({
